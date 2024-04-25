@@ -2,7 +2,7 @@ from airflow import DAG
 from datetime import datetime
 from airflow.decorators import task_group, task, dag
 
-@dag(schedule=None, start_date=datetime(2024, 4, 24), catchup=False)
+@dag(schedule=None, start_date=datetime(2024, 4, 24), catchup=False, tags=['taskgroup'])
 def task_group_dynamic_mapping():
 
     @task

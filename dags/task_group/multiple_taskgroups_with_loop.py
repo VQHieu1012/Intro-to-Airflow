@@ -7,7 +7,7 @@ with DAG(
         'multiple_taskgroup_with_loop',
         start_date = datetime(2024, 4, 24),
         schedule_interval='@daily',
-        catchup=False) as dag:
+        catchup=False, tags=['taskgroup']) as dag:
     
     groups = []
 

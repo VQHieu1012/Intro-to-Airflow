@@ -11,7 +11,7 @@ from airflow.utils.task_group import TaskGroup
 with DAG('nesting_taskgroup',
         start_date = datetime(2024, 4, 24),
         schedule_interval = '@daily',
-        catchup = False) as dag:
+        catchup = False, tags=['taskgroup']) as dag:
     
     groups = []
 

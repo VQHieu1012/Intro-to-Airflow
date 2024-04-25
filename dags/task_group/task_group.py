@@ -7,7 +7,7 @@ with DAG(
     'basic_task_group',
     schedule_interval = '@daily',
     start_date = datetime(2022, 1, 1),
-    catchup = False
+    catchup = False, tags=['taskgroup']
 ) as dag:
     t0 = EmptyOperator(task_id='start')
 
