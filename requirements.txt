@@ -5,5 +5,4 @@ apache-airflow-providers-postgres
 google-api-python-client
 boto3
 apache-airflow-providers-amazon
-
-
+dbt-core # conflict with snowflake-snowpark-python[pandas] in my_special_requirement.txt
